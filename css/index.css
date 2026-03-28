@@ -1,0 +1,38 @@
+.indexpage {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  display: flex;
+  background-image: url("/images/parchment.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  overflow: visible;
+  height: auto;
+}
+
+p {
+  color:#7f1629;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 35px !important;
+  color: #7f1629 !important;
+  font-weight: 500 !important;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 35x !important;
+  color: #7f1629 !important;
+  font-weight: 500 !important;
+  text-decoration: underline;
+}
+
+h4 {
+  font-size: 25px !important;
+  color: #7f1629 !important;
+
+}

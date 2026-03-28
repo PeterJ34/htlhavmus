@@ -1,0 +1,90 @@
+
+/* =========================================================
+  SEARCH PAGE - reinstated 14th March
+   ========================================================= */
+/* Dropdown menu for multiple matches */
+.match-dropdown {
+  margin: 12px 0;
+  padding: 12px;
+  background: #f0f8ff;
+  border: 4px solid #7f1629; /*Border round multiple matches box */
+  border-radius: 4px;
+}
+
+.match-dropdown select {
+  padding: 8px 10px;
+ /* font-size: 15px;
+  margin-right: 8px; */
+} /*missing prior to 12th March AM */
+.match-dropdown button {
+  padding: 8px 12px;
+ /* font-size: 15px; */
+}
+
+/* Only affects search.html because body has class="search-page" */
+
+/* allow scrolling (master.css hides overflow) */
+.search-page html,
+.search-page body {
+  overflow: auto !important;
+}
+
+/* Two-column layout container */
+.search-page .search-container {
+  display: flex;
+  gap: 5px; /*Gap between search boxes and results*/
+  margin-top: 20px;
+  min-height: calc(100vh - 250px);
+
+  width: 90%;               /* 12 March 2026 - make search container occupy 90% of webpage width */
+  max-width: 75%;        /* 12 March 2026 - prevent layout becoming too wide on large monitors */
+  margin-left: auto;        /* 12 March 2026 - center container horizontally */
+  margin-right: auto;       /* 12 March 2026 - center container horizontally */
+
+}
+
+/* Left sidebar (25%) */
+.search-page .search-sidebar {
+  width: 25%;
+  padding: 20px;
+  background-image: url("/images/parchment.jpg"); /* Search section background colour*/
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 90vh;
+    border: 1px solid #f0e8e9; /*Boarder round left search-bar container*/
+  border-radius: 6px;
+  padding: 16px;
+}
+
+/* Right results (75%) */
+.search-page .search-results {
+  width: 75%;
+  padding: 2px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* Search page section divider styling */
+.search-page .search-section {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid #ccc;
+}
+
+.search-page .search-section:last-child {
+  border-bottom: none;
+}
+
+/* Page title */
+.search-page .search-title {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  grid-column: 1 / -1;
+}
+
+/* "Found xx entries" on search page added 12th March*/
+.search-page .notice{
+  color: #7f1629;
+  font-weight: 500;
+}
