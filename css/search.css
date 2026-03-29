@@ -47,7 +47,7 @@
 .search-page .search-sidebar {
   width: 25%;
   padding: 20px;
-  background-image: url("/images/parchment.jpg"); /* Search section background colour*/
+  background-image: url("images/parchment.jpg"); /* Search section background colour*/
   border-radius: 8px;
   overflow-y: auto;
   max-height: 90vh;
