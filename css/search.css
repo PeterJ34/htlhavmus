@@ -47,7 +47,7 @@
 .search-page .search-sidebar {
   width: 25%;
   padding: 20px;
-  background-image: url("images/parchment.jpg"); /* Search section background colour*/
+  background-image: url("/images/parchment.jpg"); /* Search section background colour*/
   border-radius: 8px;
   overflow-y: auto;
   max-height: 90vh;
@@ -62,6 +62,7 @@
   padding: 2px;
   overflow-y: auto;
   max-height: 90vh;
+  border-color: #7f1629;
 }
 
 /* Search page section divider styling */
@@ -83,8 +84,9 @@
   grid-column: 1 / -1;
 }
 
-/* "Found xx entries" on search page added 12th March*/
-.search-page .notice{
-  color: #7f1629;
-  font-weight: 500;
+/* Firefox Scroll bar */
+.search-results {
+  scrollbar-width: thick; /* auto | thin | thick */
+  scrollbar-color: #7f1629 #eee; /* thumb track */
 }
+
